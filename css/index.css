@@ -29,6 +29,10 @@ header img {
     color: white;
 }
 
+header a{
+    text-decoration: none;
+}
+
 header .header-div {
     display: flex;
     align-items: center !important;
@@ -72,7 +76,7 @@ nav {
     position: fixed;
     padding-top: 1rem;
     bottom: 0;
-    z-index: -1;
+    z-index: 100;
 }
 
 .flex {
@@ -89,7 +93,11 @@ nav ul {
     margin-top: 60px;
 }
 
-nav ul li {
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a li {
     padding: 8px;
     border-radius: 20px;
     margin-top: 5px;
@@ -98,17 +106,19 @@ nav ul li {
     align-items: center;
 }
 
-nav ul li .arrow-right {
+nav ul a li .arrow-right {
     font-size: 10px;
     color: rgb(175, 176, 181);
 }
 
-nav ul li:hover {
+nav ul a li:hover {
     background-color: #e9ecef;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-nav ul li a {
+
+
+nav ul li .b {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -116,7 +126,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a span {
+nav ul li .b span {
     font-size: 12px;
     color: rgb(175, 176, 181);
 }
@@ -137,7 +147,7 @@ nav ul li a span {
 
 .con {
     width: 80%;
-    right: 10px;
+    right: 13px;
     border-radius: 10px;
     padding: 30px 10px;
     position: absolute;
@@ -183,13 +193,76 @@ nav ul li a span {
     padding-left: 27px;
 }
 
-.hi{
+.hi {
     font-size: 12px;
     font-weight: 700;
     color: #222222;
     font-family: "Quicksand", sans-serif;
     line-height: 17px;
-    padding: 30px 5px 0 5px;
+    padding: 30px 5px 0 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-right: 20px;
+}
+
+.flex-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flex-2 label {
+    color: rgb(175, 176, 181);
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.btns button {
+    background-color: rgb(10, 26, 168);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+.acc-table {
+    margin-top: 30px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.acc-table tr th {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: #000000;
+    line-height: 17px;
+    font-style: normal;
+    font-family: "Quicksand", sans-serif;
+}
+
+.acc-table tr td {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    Color: #464855;
+    line-height: 19px;
+    font-style: normal;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* media query */
@@ -206,6 +279,14 @@ nav ul li a span {
         background-color: rgb(10, 26, 168);
         width: 25%;
     }
+
+    .acc-table tr th {
+        font-size: 10px;
+    }
+
+    .acc-table tr td {
+        font-size: 10px;
+    }
 }
 
 @media (max-width:768px) {
@@ -220,7 +301,7 @@ nav ul li a span {
 
     .flex-1 {
         border-radius: 10px;
-        padding: 2px 10px ;
+        padding: 2px 10px;
         background-color: rgb(10, 26, 168);
         width: 30%;
     }
@@ -234,7 +315,6 @@ nav ul li a span {
 
     .menu {
         display: block !important;
-        ;
     }
 
     nav {
@@ -270,7 +350,8 @@ nav ul li a span {
     }
 
     .flex {
-        display: flex !important;;
+        display: flex !important;
+        ;
         margin-top: 90px;
         position: relative;
     }
@@ -287,4 +368,9 @@ nav ul li a span {
         margin-bottom: 10px;
     }
 
+    .tab {
+        margin-top: 30px;
+        width: 100%;
+        overflow-x: auto !important;
+    }
 }

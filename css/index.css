@@ -184,7 +184,7 @@ nav ul li a span {
 
     nav.show {
         display: block;
-        height: 92%;
+        height: 91%;
         animation: slideIn 0.5s ease forwards;
     }
 
@@ -202,7 +202,7 @@ nav ul li a span {
     }
 
     nav ul {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
 }

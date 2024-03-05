@@ -6,6 +6,10 @@
     /*  font-family: "Open Sans", sans-serif; */
 }
 
+body{
+    background-color: rgb(239,240,245);
+}
+
 /* header style */
 
 header {
@@ -43,7 +47,7 @@ header .header-div h2 {
     font-size: 13px;
     font-weight: 800;
     font-style: normal;
-    padding-top: 5px;
+    padding-top: 7px;
     line-height: 19px;
     color: blue;
     font-family: "Open Sans", sans-serif;
@@ -125,11 +129,31 @@ nav ul li a span {
     font-family: "Quicksand", sans-serif;
 }
 
+.con{
+    width: 80%;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 257px;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+}
+
 /* media query */
+
+@media (max-width:1024px) {
+    .con{
+        width: 80%;
+        margin-left: 190px;
+    }
+}
 
 @media (max-width: 768px) {
     nav {
         width: 20%;
+    }
+    .con{
+        width: 80%;
+        margin-left: 150px;
     }
 }
 
@@ -165,6 +189,12 @@ nav ul li a span {
     nav.show {
         display: block;
         animation: slideIn 0.5s ease forwards;
+    }
+
+    .con{
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 10px;
     }
 
 }

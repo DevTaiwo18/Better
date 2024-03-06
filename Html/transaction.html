@@ -1,0 +1,349 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Better Life |Tranfer Transaction</title>
+    <!-- title -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- css -->
+
+    <!-- logo -->
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    <!-- logo -->
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- boostrap -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- font -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font -->
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- icon -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+
+</head>
+
+<body>
+    <!-- static Header -->
+    <header class="bg-white shadow-lg">
+        <a href="../index.html">
+            <img src="../image/download.png" alt="">
+        </a>
+        <div class="header-div">
+            <div id="circle"></div>
+            <h2>Hello admin</h2>
+            <i class="fa-solid fa-bars menu" onclick="toggleMenu()"></i>
+        </div>
+    </header>
+    <!-- static Header -->
+
+    <div class="flex">
+        <nav class="shadow-lg" id="mainNav">
+            <ul>
+                <a href="../index.html">
+                    <li>
+                        <div class="b">
+                            <div class="custom-radius">
+                                <i class="bi bi-house-door-fill "></i>
+                            </div>
+                            <span>Home</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+                <a href="../Html/transaction.html">
+                    <li>
+                        <div class="b">
+                            <div class=" custom-radius">
+                                <i class="bi bi-list"></i>
+                            </div>
+                            <span>Transaction</span>
+                        </div>
+                        <i class="bi bi-chevron-right arrow-right"></i>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+
+        <section class="con shadow-lg">
+            
+            <div class="transaction">
+                <h1>Transaction</h1>
+                <div class="dropdown">
+                    <button class="dropdown-toggle drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Tranfer</a></li>
+                      <li><a class="dropdown-item" href="#">Fund Deposit</a></li>
+                      <li><a class="dropdown-item" href="#">Data subscription</a></li>
+                      <li><a class="dropdown-item" href="#">Airtime</a></li>
+                      <li><a class="dropdown-item" href="#">Airtime 2 cash</a></li>
+                      <li><a class="dropdown-item" href="#">Bill Payment</a></li>
+                      <li><a class="dropdown-item" href="#">cable & Tv</a></li>
+                      <li><a class="dropdown-item" href="#">Merchant Upgrade</a></li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class="flexx">
+                
+                
+            </div>
+
+
+            <!-- <div class="search">
+                <p></p>
+                <div class="flex-2">
+                    <label class="form-label" style="padding-top: 5px;" for="exampleFormControlInput1">Search:</label>
+                    <input type="text" class="form-control" style="font-size: 13px;" id="exampleFormControlInput1"
+                        name="text" placeholder="Search by number">
+                </div>
+            </div>
+
+            <div class="btns">
+                <p></p>
+                <div class="btn">
+                    <button>Export Excel</button>
+                    <button>Export PDF</button>
+                </div>
+            </div>
+
+            <div class="tab">
+                <table class="table table-striped acc-table">
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">FisrtName</th>
+                        <th scope="col">LastName</th>
+                        <th scope="col">PhoneNumber</th>
+                        <th scope="col">Balance</th>
+                        <th scope="col">Commission</th>
+                        <th scope="col">Source</th>
+                        <th scope="col">Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>Bolajialabi</td>
+                        <td>Bolaji</td>
+                        <td>Bolaji</td>
+                        <td>2349063866781</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Steph09</td>
+                        <td>oladimeji</td>
+                        <td>adenusi</td>
+                        <td>2349063866781</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>obasanmi1991</td>
+                        <td>joy</td>
+                        <td>joy</td>
+                        <td>2348126808793</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>nikkybaby</td>
+                        <td>OLANIKE</td>
+                        <td>OLATUNJI</td>
+                        <td>2348144424219</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Moshood</td>
+                        <td>Rukayat</td>
+                        <td>Hadiza</td>
+                        <td>2348132150044</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rokibat01</td>
+                        <td>Rokibat</td>
+                        <td>Alawode</td>
+                        <td>2349168980533</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>ganiya</td>
+                        <td>ganiyat</td>
+                        <td>nasiru</td>
+                        <td>2348157571999</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nim@670502#</td>
+                        <td>Ntokozo</td>
+                        <td>Myeni</td>
+                        <td>0828494081</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Debbiepretty</td>
+                        <td>Deborah</td>
+                        <td>Fagbayi</td>
+                        <td>2348143505349</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>AFOLABIAYOMIDE</td>
+                        <td>AYOMIDE</td>
+                        <td>AYOMIDE</td>
+                        <td>2349074140989</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Timothy</td>
+                        <td>Alade</td>
+                        <td>Timothy</td>
+                        <td>2347066089348</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lefty</td>
+                        <td>Rofiyat</td>
+                        <td>Fagbemi</td>
+                        <td>2349157286096</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teesquare</td>
+                        <td>olusola</td>
+                        <td>olakanmi</td>
+                        <td>2348028949019</td>
+                        <td>₦0</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bushrah</td>
+                        <td>Bushrah</td>
+                        <td>Musediq</td>
+                        <td>2349067276886</td>
+                        <td>₦1,200</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Godswill17</td>
+                        <td>Godswill</td>
+                        <td>Ibeawuchi</td>
+                        <td>2347048546162</td>
+                        <td>₦1,200</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>wrre</td>
+                        <td>Ibeawuchi</td>
+                        <td>Godswill</td>
+                        <td>2347067409231</td>
+                        <td>₦1,200</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>An-nabeely</td>
+                        <td>Abdulwarith</td>
+                        <td>olowooribi</td>
+                        <td>2347018911156</td>
+                        <td>₦1,200</td>
+                        <td>₦0</td>
+                        <td>app</td>
+                        <td>Normal</td>
+                    </tr>
+
+                </table>
+            </div> -->
+        </section>
+    </div>
+
+</body>
+<!-- boostarp -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!-- boostarp -->
+
+<script src="./js/index.js"></script>
+
+</html>
